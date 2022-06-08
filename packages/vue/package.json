@@ -1,8 +1,7 @@
 {
-  "name": "@antfu/eslint-config-vue",
-  "version": "0.25.1",
+  "name": "@jirafa/eslint-config-vue",
+  "version": "0.0.1",
   "description": "",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com> (https://github.com/antfu/)",
   "license": "MIT",
   "keywords": [
     "eslint-config"
@@ -15,7 +14,7 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@antfu/eslint-config-ts": "workspace:*",
+    "@jirafa/eslint-config-ts": "workspace:*",
     "eslint-plugin-vue": "^9.0.1"
   },
   "devDependencies": {
