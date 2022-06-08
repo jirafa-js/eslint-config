@@ -1,0 +1,25 @@
+{
+  "name": "@jirafa/eslint-config-prettier",
+  "version": "1.0.0",
+  "description": "prettier eslint config",
+  "license": "MIT",
+  "homepage": "https://github.com/jirafa-js/eslint-config",
+  "keywords": [
+    "eslint-config"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0"
+  }
+}
