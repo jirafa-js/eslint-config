@@ -1,0 +1,23 @@
+{
+  "name": "@jirafa/eslint-config-ts",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "eslint-config"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "@jirafa/eslint-config": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1"
+  },
+  "devDependencies": {
+    "eslint": "7.4.0",
+    "typescript": "^4.7.3"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0",
+    "typescript": ">=3.9.0"
+  }
+}

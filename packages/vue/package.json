@@ -1,0 +1,20 @@
+{
+  "name": "@jirafa/eslint-config-vue",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "eslint-config"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "@jirafa/eslint-config-ts": "workspace:*",
+    "eslint-plugin-vue": "^9.1.0"
+  },
+  "devDependencies": {
+    "eslint": "7.4.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  }
+}
