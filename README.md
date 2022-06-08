@@ -1,5 +1,7 @@
 # @jirafa/eslint-config
 
+> Forked from [antfu/eslint-config](https://github.com/antfu/eslint-config)
+
 [![npm](https://img.shields.io/npm/v/@jirafa/eslint-config?color=a1b858&label=)](https://npmjs.com/package/@jirafa/eslint-config)
 
 - Single quotes, no semi
@@ -14,42 +16,68 @@
 ### Install
 
 ```bash
-pnpm add -D eslint @jirafa/eslint-config
+pnpm i -D @jirafa/eslint-config-basic # JavaScript only
+# Or yarn add -D / npm install -D
+pnpm i -D @jirafa/eslint-config-ts # JavaScript and TypeScript
+pnpm i -D @jirafa/eslint-config-vue # JavaScript, TypeScript and Vue 3
+pnpm i -D @jirafa/eslint-config-vue2 # JavaScript, TypeScript and Vue 2
+
+pnpm i -D @jirafa/eslint-config-prettier # Prettier only
+pnpm i -D @jirafa/eslint-config # JavaScript, TypeScript, Vue 3 and Prettier
 ```
 
-### Config `.eslintrc`
+### Config
 
-```json
+```jsonc
+// .eslintrc
 {
   "extends": "@jirafa"
 }
 ```
 
-> You don't need `.eslintignore` normally as it has been provided by the preset.
-
-### Add script for package.json
-
-For example:
-
-```json
+```jsonc
+// .prettierrc
 {
-  "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  }
+  "singleQuote": true,
+  "semi": true,
+  "arrowParens": "avoid",
+  "jsxSingleQuote": true,
+  "endOfLine": "lf",
+  "trailingComma": "es5"
 }
 ```
 
-### Config VS Code auto fix
+> You don't need `.eslintignore` normally as it has been provided by the preset.
 
-Create `.vscode/settings.json`
+### VSCode
 
-```json
+```jsonc
+// settings.json
 {
-  "prettier.enable": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "json",
+    "json5",
+    "jsonc",
+    "yaml"
+  ],
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "json",
+    "json5",
+    "jsonc",
+    "yaml"
+  ]
 }
 ```
 
