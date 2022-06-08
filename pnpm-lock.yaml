@@ -102,6 +102,17 @@ importers:
     devDependencies:
       eslint: 8.17.0
 
+  packages/vue2:
+    specifiers:
+      '@jirafa/eslint-config-ts': workspace:*
+      eslint: ^8.17.0
+      eslint-plugin-vue: ^9.1.0
+    dependencies:
+      '@jirafa/eslint-config-ts': link:../typescript
+      eslint-plugin-vue: 9.1.0_eslint@8.17.0
+    devDependencies:
+      eslint: 8.17.0
+
 packages:
 
   /@babel/code-frame/7.16.7:
