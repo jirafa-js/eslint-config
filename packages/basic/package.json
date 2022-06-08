@@ -1,6 +1,6 @@
 {
   "name": "@jirafa/eslint-config-basic",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "license": "MIT",
   "homepage": "https://github.com/jirafa-js/eslint-config",
